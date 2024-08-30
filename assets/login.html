@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Login">
+        <!-- <img src="assets/images/logo.svg" alt="Logo" /> -->
+        <nav>
+            <span><img width="53" src="assets/images/logo.svg" alt=""></span>
+            <div>
+                <button class="btn">English</button>
+                <button class="btn btn-red-sm">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="LoginCard">
+            <h1>Sign In</h1>
+            <form>
+                <div class="textFieldWrapper">
+                    <label for="email" style="color: #8c8c8c;">Email or phone number</label>
+                    <input id="email" name="email" type="text" class="textField" style="background-color: #333;" autocomplete="off" />
+                </div>
+
+                <span id="emailSpan">Please enter a valid email</span>
+
+                <div class="textFieldWrapper">
+                    <label for="password" style="color: #8c8c8c;">Password</label>
+                    <input id="password" name="password" type="password" class="textField" style="background-color: #333;" autocomplete="off" />
+                </div>
+
+                <span id="passwordSpan">Your password must contain between 4 and 20 characters.</span>
+
+                <button onclick="formSubmitHandler(event)" type="submit" style="cursor: pointer; height: 45px; width: 100%; background-color: #e50914; color: #fff;">
+                    Sign In
+                </button>
+            </form>
+
+            <div class="HorizontalDiv">
+                <div class="checkboxWrapper" style="margin-left: -12px;">
+                    <input type="checkbox" id="rememberMe" name="checkedB" style="color: rgb(229, 9, 20);" />
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <span>Need help?</span>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>
